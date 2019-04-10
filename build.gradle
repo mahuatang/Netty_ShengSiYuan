@@ -1,0 +1,37 @@
+group 'com.shengsiyuan'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: "idea"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile (
+            "io.netty:netty-all:4.1.10.Final",
+            "com.google.protobuf:protobuf-java:3.5.0",
+            "com.google.protobuf:protobuf-java-util:3.5                                 .0",
+            "org.apache.thrift:libthrift:0.10.0",
+            "org.apache.poi:poi:3.16",
+            "org.apache.poi:poi-ooxml:3.16",
+            "javax.mail:mail:1.4.7",
+            'commons-net:commons-net:3.3',
+            'org.apache.commons:commons-dbcp2:2.1.1',
+            'com.google.code.gson:gson:2.8.1',
+            'org.apache.httpcomponents:httpclient:4.5.3',
+            'org.apache.httpcomponents:httpcore:4.4.6',
+            'com.alibaba:fastjson:1.2.12',
+            'commons-pool:commons-pool:1.5.6',
+            'mysql:mysql-connector-java:5.1.42',
+            'org.apach.thrift:libthrift:0.10.0'
+    )
+    /*compile {
+       "io.netty:netty-all:4.1.10.Final"
+    }*/
+}
